@@ -1,17 +1,17 @@
 #div00 {
   background-color: lightgrey;
-  width: 500px;
+  width: 300px;
   float: left;
-  height: 400px;
+  height: 200px;
   padding: 150px;
   margin: 60px;
 }
 
 #div01 {
   background-color: lightgrey;
-  width: 500px;
+  width: 300px;
   float: right;
-  height: 400px;
+  height: 200px;
   padding: 150px;
   margin-right: 60px;
   margin-top: 60px;
