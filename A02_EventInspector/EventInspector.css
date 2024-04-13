@@ -1,0 +1,18 @@
+#div00 {
+  background-color: lightgrey;
+  width: 500px;
+  float: left;
+  height: 400px;
+  padding: 150px;
+  margin: 60px;
+}
+
+#div01 {
+  background-color: lightgrey;
+  width: 500px;
+  float: right;
+  height: 400px;
+  padding: 150px;
+  margin-right: 60px;
+  margin-top: 60px;
+}
