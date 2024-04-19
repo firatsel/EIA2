@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Einkaufsliste.js"></script>
+    <link rel="stylesheet" href="Einkaufsliste.css">
+    <title>Einkaufsliste</title>    
+</head>
+
+<body>
+    <header id="ueberschrift">
+        <h1>Einkaufsliste</h1>    
+    </header>
+
+    <div id="einkauf">
+        <fieldset id="formular">
+            <input name="warensuche" id="warensuche" cols="50" rows="1" placeholder="Hinzufügen..."></input>
+            <p>Kategorie:
+            <select name="kategorie" id="kategorie">
+                <option value="Obst und Gemüse">Obst und Gemüse</option>
+                <option value="Milch und Käse">Milch und Käse</option>
+                <option value="Backwaren">Backwaren</option>
+                <option value="Haushaltsmittel">Haushaltsmittel</option>
+                <option value="Fleisch und Fisch">Fleisch und Fisch</option>
+            </select>
+            </p>
+            Kommentar:
+            <input name="kommentar" id="kommentar" cols="50" rows="1" ></input>
+            <button onclick="myFunction()">OK</button>
+        </fieldset>
+    </div>
+
+<div class="gesamt">   
+    <div id="feld01">
+        <fieldset id="feld001">
+            Obst und Gemüse
+            <fieldset>
+                <button onclick="myCheck()">check</button>
+                Apfel
+                <select name="anzahl" id="anzahl01">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <p>Letzter Kauf:</p>
+                <textarea name="Kommentar" id="kommentar01" cols="50" rows="1" placeholder="Kommentar..."></textarea>
+            </fieldset>
+        </fieldset>
+    </div>
+
+    <div id="feld02">
+        <fieldset>
+            Milch und Käse
+            <fieldset>
+                <button onclick="myCheck02()">check</button>
+                Joghurt
+                <select name="anzahl" id="anzahl02">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <p>Letzter Kauf:</p>
+                <textarea name="kommentar" id="kommentar02" cols="50" rows="1" placeholder="Kommentar..."></textarea>
+            </fieldset>
+        </fieldset>
+    </div>
+
+    <div id="feld03">
+        <fieldset>
+            Backwaren
+            <fieldset>
+                <button onclick="myCheck03()">check</button>
+                Kuchen
+                <select name="anzahl" id="anzahl03">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <p>Letzter Kauf:</p>
+                <textarea name="kommentar" id="kommentar03" cols="50" rows="1" placeholder="Kommentar..."></textarea>
+            </fieldset>
+        </fieldset>
+    </div>
+
+    <div id="feld04">
+        <fieldset>
+            Haushaltsmittel
+            <fieldset>
+                <button onclick="myCheck04()">check</button>
+                Waschmittel
+                <select name="anzahl" id="anzahl04">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <p>Letzter Kauf:</p>
+                <textarea name="kommentar" id="kommentar04" cols="50" rows="1" placeholder="Kommentar..."></textarea>
+            </fieldset>
+        </fieldset>
+    </div>
+</div>
+</body>
+</html>
