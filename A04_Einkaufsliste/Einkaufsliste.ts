@@ -1,19 +1,3 @@
-export let data = 
-    [
-        {product: "Apfel", checked: "clicked", category: "Obst und Gemüse", date: "25.04.2024", amount: 1, 
-        comment: " ", delete: "clicked"},
-        {product: "Joghurt", checked: "clicked", category: "Milch und Käse", date: "25.04.2024", amount: 1, 
-        comment: " ", delete: "clicked"},
-        {product: "Kuchen", checked: "clicked", category: "Backwaren", date: "25.04.2024", amount: 1, 
-        comment: " ", delete: "clicked"},
-        {product: "Waschmittel", checked: "clicked", category: "Haushaltsmittel", date: "25.04.2024", amount: 2, 
-        comment: " ", delete: "clicked"}
-    ]
-    
-for (let entry of data) {
-    console.log(entry);
-}
-
 function myFunction() {
     let x = <HTMLInputElement>document.getElementById("warensuche");
     let y = <HTMLInputElement>document.getElementById("kategorie");

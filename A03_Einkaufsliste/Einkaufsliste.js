@@ -11,43 +11,55 @@ exports.data = [
     { product: "Waschmittel", checked: "clicked", category: "Haushaltsmittel", date: "25.04.2024", amount: 2,
         comment: " ", delete: "clicked" }
 ];
-for (var _i = 0, data_1 = exports.data; _i < data_1.length; _i++) {
-    var entry = data_1[_i];
+for (let entry of exports.data) {
     console.log(entry);
 }
 function myFunction() {
-    var x = document.getElementById("warensuche");
-    var y = document.getElementById("kategorie");
-    var z = document.getElementById("kommentar");
+    let x = document.getElementById("warensuche");
+    let y = document.getElementById("kategorie");
+    let z = document.getElementById("kommentar");
     console.log(x.value);
     console.log(y.value);
     console.log(z.value);
 }
 function boughtButton() {
-    var myElement = document.getElementById("feld01");
+    let myElement = document.getElementById("feld01");
     myElement.style.background = "green";
     myElement.style.color = "white";
     console.log(new Date().toLocaleString());
 }
 function boughtButton02() {
-    var myElement = document.getElementById("feld02");
+    let myElement = document.getElementById("feld02");
     myElement.style.background = "green";
     myElement.style.color = "white";
     console.log(new Date().toLocaleString());
 }
 function boughtButton03() {
-    var myElement = document.getElementById("feld03");
+    let myElement = document.getElementById("feld03");
     myElement.style.background = "green";
     myElement.style.color = "white";
     console.log(new Date().toLocaleString());
 }
 function boughtButton04() {
-    var myElement = document.getElementById("feld04");
+    let myElement = document.getElementById("feld04");
     myElement.style.background = "green";
     myElement.style.color = "white";
     console.log(new Date().toLocaleString());
 }
-function deleteButton04() {
-    var myElement = document.getElementById("feld04");
+function deleteButton() {
+    let myElement = document.getElementById("feld01");
     myElement.remove();
 }
+function deleteButton02() {
+    let myElement = document.getElementById("feld02");
+    myElement.remove();
+}
+function deleteButton03() {
+    let myElement = document.getElementById("feld03");
+    myElement.remove();
+}
+function deleteButton04() {
+    let myElement = document.getElementById("feld04");
+    myElement.remove();
+}
+//# sourceMappingURL=Einkaufsliste.js.map

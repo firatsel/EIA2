@@ -1,3 +1,4 @@
+"use strict";
 var L02_Load;
 (function (L02_Load) {
     window.addEventListener("load", handleLoad);
@@ -6,7 +7,7 @@ var L02_Load;
         document.addEventListener("click", logInfo);
         document.body.addEventListener("click", logInfo);
         document.body.addEventListener("keyup", logInfo);
-        var divs = document.querySelectorAll("div");
+        let divs = document.querySelectorAll("div");
         console.log(divs);
         divs[0].addEventListener("click", logInfo);
         divs[0].addEventListener("keyup", logInfo);
@@ -14,9 +15,9 @@ var L02_Load;
         divs[1].addEventListener("keyup", logInfo);
     }
     function setInfoBox(_event) {
-        var x = _event.pageX;
-        var y = _event.pageY;
-        var span = document.querySelector("span");
+        let x = _event.pageX;
+        let y = _event.pageY;
+        let span = document.querySelector("span");
         span.style.left = x + 10 + "px";
         span.style.top = x + 10 + "px";
         span.innerHTML = "mouseposition: " + x + "" + y + "target" + _event.target;
@@ -28,3 +29,4 @@ var L02_Load;
         console.log(_event.currentTarget);
     }
 })(L02_Load || (L02_Load = {}));
+//# sourceMappingURL=EventInspector.js.map
