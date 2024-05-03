@@ -11,7 +11,3 @@ exports.data = [
     { product: "Waschmittel", checked: "clicked", category: "Haushaltsmittel", date: "25.04.2024", amount: 2,
         comment: " ", delete: "clicked" }
 ];
-for (var _i = 0, data_1 = exports.data; _i < data_1.length; _i++) {
-    var entry = data_1[_i];
-    console.log(entry);
-}
