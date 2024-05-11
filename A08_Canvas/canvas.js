@@ -1,22 +1,23 @@
+"use strict";
 var canvas;
 (function (canvas_1) {
     window.addEventListener("load", handleLoad);
-    var canvas;
-    var crc2;
-    var rectangle02;
+    let canvas;
+    let crc2;
+    let rectangle02;
     function handleLoad() {
         canvas = document.querySelector("canvas");
         crc2 = canvas.getContext("2d");
         canvas.style.width = window.innerWidth + "px";
         canvas.style.height = window.innerHeight + "px";
-        var strokeColor;
-        var fillColor;
+        let strokeColor;
+        let fillColor;
         drawBackground();
-        for (var i = 0; i < 4; i++) {
-            for (var z = 0; z < 3; z++) {
-                var x = Math.random() * 200;
-                var y = (Math.random() * i * 50) * z;
-                var size = Math.random() * 40 + 20;
+        for (let i = 0; i < 4; i++) {
+            for (let z = 0; z < 3; z++) {
+                let x = Math.random() * 200;
+                let y = (Math.random() * i * 50) * z;
+                let size = Math.random() * 40 + 20;
                 switch (i) {
                     case 0:
                         strokeColor = "#838b83";
@@ -65,7 +66,7 @@ var canvas;
         rectangle02.fillRect(_x, _y, 10, 10);
     }
     function drawBackground() {
-        var gradient = crc2.createLinearGradient(0, 0, 0, crc2.canvas.height);
+        let gradient = crc2.createLinearGradient(0, 0, 0, crc2.canvas.height);
         gradient.addColorStop(0, "green");
         gradient.addColorStop(0.4, "limegreen");
         gradient.addColorStop(1, "green");
@@ -73,3 +74,4 @@ var canvas;
         crc2.fillRect(0, 0, window.innerWidth, window.innerHeight);
     }
 })(canvas || (canvas = {}));
+//# sourceMappingURL=canvas.js.map

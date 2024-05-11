@@ -11,3 +11,4 @@ exports.data = [
     { product: "Waschmittel", checked: "clicked", category: "Haushaltsmittel", date: "25.04.2024", amount: 2,
         comment: " ", delete: "clicked" }
 ];
+//# sourceMappingURL=DataList.js.map
