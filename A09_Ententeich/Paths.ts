@@ -1,4 +1,4 @@
-namespace A09_Ententeich {
+namespace A10_Ententeich {
     export let duckPaths: Path2D[];
 
 }

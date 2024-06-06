@@ -1,4 +1,4 @@
- namespace A09_Ententeich {
+ namespace A10_Ententeich {
     export let canvas: HTMLCanvasElement | null = document.querySelector("canvas");
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", handleLoad)

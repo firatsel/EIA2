@@ -13,20 +13,20 @@ var A09_Ententeich;
         move() {
             this.positionX += 1;
             this.positionY -= 1;
-            if (this.positionX > A09_Ententeich.crc2.canvas.width, this.positionY > A09_Ententeich.crc2.canvas.width) {
+            if (this.positionX > crc2.canvas.width, this.positionY > crc2.canvas.width) {
                 this.positionX = 100;
                 this.positionY = 50;
             }
         }
         draw() {
-            A09_Ententeich.crc2.save();
-            A09_Ententeich.crc2.beginPath();
-            A09_Ententeich.crc2.translate(this.positionX, this.positionY);
-            A09_Ententeich.crc2.fillStyle = this.color;
-            A09_Ententeich.crc2.ellipse(35, 220, 10, 5, 0, 0, 2 * Math.PI);
-            A09_Ententeich.crc2.fill();
-            A09_Ententeich.crc2.closePath();
-            A09_Ententeich.crc2.restore();
+            crc2.save();
+            crc2.beginPath();
+            crc2.translate(this.positionX, this.positionY);
+            crc2.fillStyle = this.color;
+            crc2.ellipse(35, 220, 10, 5, 0, 0, 2 * Math.PI);
+            crc2.fill();
+            crc2.closePath();
+            crc2.restore();
         }
     }
     A09_Ententeich.Bee = Bee;

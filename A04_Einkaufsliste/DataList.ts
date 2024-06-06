@@ -1,4 +1,4 @@
-namespace Einkaufsliste {
+namespace A04_Einkaufsliste {
     export interface Product {
       product: string;
       checked: boolean;
