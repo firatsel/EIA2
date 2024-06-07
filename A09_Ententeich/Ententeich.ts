@@ -1,8 +1,9 @@
- namespace A10_Ententeich {
+ namespace A09_Ententeich {
     export let canvas: HTMLCanvasElement | null = document.querySelector("canvas");
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", handleLoad)
 
+    export let moveables: Moveable[] = [];
     export let ducks: Duck[] = [];
     export let duck2: Duck2[] = [];
     export let trees: Tree[] = [];
@@ -26,11 +27,9 @@
         bees[0].move();
         bees[1].draw();
         bees[1].move();
-
-        for (let i: number = 0; i < 4; i++) {
-            clouds[i].move();
-            clouds[i].draw();
-        }
+        
+        clouds[0].move();
+        clouds[0].draw();
     }
 
     export function handleLoad(): void {
@@ -46,19 +45,13 @@
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        let strokeColor: string = "#d5d7d8";
+        let strokeColor: string = "#D5D7D8'";
         let fillColor: string;
 
         drawBackground();
         drawMountain();
         drawMeadow();
         drawPond();
-
-
-        ducks.push(new Duck(600, 450, "#d5d7d8"));
-        ducks.push(new Duck(1000, 600, "#d5d7d8"));
-        duck2.push(new Duck2(1300, 500, "#d5d7d8"));
-
 
         trees.push(new Tree(320, 370, "#bc7b31"));
         tree2.push(new Tree2(320, 370, "#bc7b31"));
@@ -67,6 +60,10 @@
         bees.push(new Bee(50, 40, "yellow"))
 
         clouds.push(new Cloud(10, 10, "#D8EAF2"));
+
+        ducks.push(new Duck(600, 450, "#D5D7D8"));
+        ducks.push(new Duck(1000, 600, "#D5D7D8"));
+        duck2.push(new Duck2(1300, 500, "#D5D7D8"));
 
         imgData = crc2.getImageData(0, 0, canvas.width, canvas.height);
 
@@ -103,7 +100,7 @@
             crc2.save();
             crc2.beginPath();
             crc2.translate(0, 190);
-            crc2.fillStyle = "#d5d7d8";
+            crc2.fillStyle = "#D5D7D8";
             crc2.beginPath();
             crc2.moveTo(0, 500);
             crc2.lineTo(2000, 1000);

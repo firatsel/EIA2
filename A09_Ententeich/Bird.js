@@ -1,8 +1,8 @@
 "use strict";
-var A10_Ententeich;
-(function (A10_Ententeich) {
+var A09_Ententeich;
+(function (A09_Ententeich) {
     class Bird {
     }
-    A10_Ententeich.Bird = Bird;
-})(A10_Ententeich || (A10_Ententeich = {}));
+    A09_Ententeich.Bird = Bird;
+})(A09_Ententeich || (A09_Ententeich = {}));
 //# sourceMappingURL=Bird.js.map

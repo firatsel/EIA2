@@ -1,4 +1,4 @@
-namespace A10_Ententeich {
+namespace A09_Ententeich {
 
     export class Bird {
     }

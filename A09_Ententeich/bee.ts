@@ -1,18 +1,13 @@
 namespace A09_Ententeich {
 
-    export class Bee {
-        positionX: number;
-        positionY: number;
-        color: string;
+    export class Bee extends Moveable{
         
         constructor(_x: number, _y: number, _color: string) {
-            this.positionX = _x;
-            this.positionY = _y;
-            this.color = _color
+            super(_x, _y, _color)
 
         }
 
-        move(){
+        move(): void{
             this.positionX += 1
             this.positionY -= 1
             if (this.positionX > crc2.canvas.width, this.positionY > crc2.canvas.width) {

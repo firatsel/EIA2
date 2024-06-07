@@ -1,30 +1,23 @@
-namespace A10_Ententeich {
+namespace A09_Ententeich {
 
-    export class Cloud {
-        positionX: number;
-        positionY: number;
-        color: string;
+    export class Cloud extends Moveable {
 
-        constructor(_positionX: number, _positionY: number, _color:string) {
-            this.positionX = _positionX;
-            this.positionY = _positionY;
-            this.color = _color;
+        constructor(_x: number, _y: number, _color: string) {
+            super(_x, _y, _color)
 
-            this.draw()
-            this.move()
         }
 
-        move() {
+        move(): void {
             this.positionX += 1
             if (this.positionX > crc2.canvas.width) {
-                this.positionX = -100;
+                this.positionX = 1;
             }
 
         }
 
         draw(): void {
             crc2.save();
-            crc2.translate(0, 10);
+            crc2.translate(this.positionX, 10);
             crc2.beginPath();
             crc2.moveTo(0, 0);
             crc2.bezierCurveTo(-40,  20, -40,  70,  60,  70);

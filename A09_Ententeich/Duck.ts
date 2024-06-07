@@ -1,5 +1,24 @@
 namespace A09_Ententeich {
+/* 
 
+Habe hier versucht den constructor wie bei der bee.ts und cloud.ts einzufügen, was jedoch nicht geklappt hat...
+    ...
+    export class Duck extends Moveable {
+        constructor(_x: number, _y: number, _color: string) {
+            super(_x, _y, _color)
+
+        } 
+        ...
+    }
+    ...
+
+Habe da folgende Fehlermeldung erhalten: error TS2304: Cannot find name 'Moveable'.
+
+Zusätzliche Info: 
+Ich habe die draw- und move- Funktionen nicht in Moveable.ts gepackt, da die in jeder ts-Datei 
+unterschiedliche Werte haben. Deshalb habe ich nur den constructor in die Moveable.ts gepackt :)
+        
+*/
     export class Duck {
         positionX: number;
         positionY: number;
@@ -73,4 +92,5 @@ namespace A09_Ententeich {
             crc2.restore();
         }
     }
+    
 }
