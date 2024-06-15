@@ -1,8 +1,8 @@
 namespace A09_Ententeich {
 
     export class Tree {
-        positionX: number;
-        positionY: number;
+        public positionX: number;
+        public positionY: number;
 
         constructor(_positionX: number, _positionY: number, _color:string) {
             this.positionX = _positionX;
@@ -11,7 +11,7 @@ namespace A09_Ententeich {
             this.draw();
         }
         
-        draw(): void {
+        public draw(): void {
             crc2.save();
             crc2.beginPath();
             crc2.translate(this.positionX, this.positionY);
@@ -29,8 +29,8 @@ namespace A09_Ententeich {
     }
 
     export class Tree2 {
-        positionX: number;
-        positionY: number;
+        public positionX: number;
+        public positionY: number;
 
         constructor(_positionX: number, _positionY: number, _color:string) {
             this.positionX = _positionX;
@@ -39,7 +39,7 @@ namespace A09_Ententeich {
             this.draw();
         }
         
-        draw(): void {
+        public draw(): void {
             crc2.save();
             crc2.beginPath();
             crc2.translate(this.positionX, this.positionY);

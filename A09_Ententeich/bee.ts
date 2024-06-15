@@ -7,7 +7,7 @@ namespace A09_Ententeich {
 
         }
 
-        move(): void{
+        public move(): void{
             this.positionX += 1
             this.positionY -= 1
             if (this.positionX > crc2.canvas.width, this.positionY > crc2.canvas.width) {
@@ -16,7 +16,7 @@ namespace A09_Ententeich {
             }
         }
 
-        draw(): void{
+        public draw(): void{
             crc2.save();
             crc2.beginPath();
             crc2.translate(this.positionX, this.positionY);

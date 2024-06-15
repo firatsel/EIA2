@@ -1,9 +1,9 @@
 namespace A09_Ententeich {
 
     export class Moveable {
-        positionX: number;
-        positionY: number;
-        color: string;
+        public positionX: number;
+        public positionY: number;
+        public color: string;
 
         constructor(_x: number, _y: number, _color: string) {
             this.positionX = _x;

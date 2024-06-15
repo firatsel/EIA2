@@ -20,9 +20,9 @@ unterschiedliche Werte haben. Deshalb habe ich nur den constructor in die Moveab
         
 */
     export class Duck {
-        positionX: number;
-        positionY: number;
-        color: string = "green";
+        public positionX: number;
+        public positionY: number;
+        public color: string = "green";
 
         constructor(_positionX: number, _positionY: number, _color:string) {
             this.positionX = _positionX;
@@ -31,14 +31,14 @@ unterschiedliche Werte haben. Deshalb habe ich nur den constructor in die Moveab
 
         }
 
-        move1(): void {
+        public move1(): void {
             this.positionX += 1
             if (this.positionX > crc2.canvas.width) {
                 this.positionX = 0;
             }
         }
 
-        draw1(): void {
+        public draw1(): void {
             crc2.save();
             crc2.beginPath();
             crc2.translate(this.positionX, this.positionY);
@@ -57,9 +57,9 @@ unterschiedliche Werte haben. Deshalb habe ich nur den constructor in die Moveab
     }
 
     export class Duck2 {
-        positionX: number;
-        positionY: number;
-        color: string = "green";
+        public positionX: number;
+        public positionY: number;
+        public color: string = "green";
 
         constructor(_positionX: number, _positionY: number, _color:string) {
             this.positionX = _positionX;
@@ -68,14 +68,14 @@ unterschiedliche Werte haben. Deshalb habe ich nur den constructor in die Moveab
 
         }
 
-        move2(): void {
+        public move2(): void {
             this.positionX += 1
             if (this.positionX > crc2.canvas.width) {
                 this.positionX = 0;
             }
         }
 
-        draw2(): void {
+        public draw2(): void {
             crc2.save();
             crc2.beginPath();
             crc2.translate(this.positionX, this.positionY);
